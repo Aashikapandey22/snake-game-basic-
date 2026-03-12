@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Snake Game Deluxe</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Snake Game Deluxe</h1>
+
+<div class="nav">
+<button onclick="showSection('game')">Play</button>
+<button onclick="showSection('leaderboard')">Leaderboard</button>
+<button onclick="showSection('forum')">Forum</button>
+</div>
+
+<!-- GAME SECTION -->
+<div id="game" class="section">
+
+<h2>Play Game</h2>
+
+<p>Score: <span id="score">0</span></p>
+
+<canvas id="gameCanvas" width="400" height="400"></canvas>
+
+<br>
+
+<button onclick="startGame()">Start Game</button>
+<button onclick="pauseGame()">Pause</button>
+<button onclick="resumeGame()">Resume</button>
+
+<!-- GAME OVER SCREEN -->
+<div id="gameOverBox" class="gameover">
+
+<h3>Game Over</h3>
+
+<p>Your Score: <span id="finalScore"></span></p>
+
+<input type="text" id="playerName" placeholder="Enter your name">
+
+<br><br>
+
+<button onclick="saveScore()">Save Score</button>
+<button onclick="startGame()">Play Again</button>
+
+</div>
+
+</div>
+
+<!-- LEADERBOARD -->
+<div id="leaderboard" class="section" style="display:none">
+
+<h2>Leaderboard</h2>
+
+<ul id="scoreList"></ul>
+
+</div>
+
+<!-- FORUM -->
+<div id="forum" class="section" style="display:none">
+
+<h2>Forum</h2>
+
+<input type="text" id="commentInput" placeholder="Write a comment">
+
+<button onclick="addComment()">Post</button>
+
+<ul id="commentList"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
