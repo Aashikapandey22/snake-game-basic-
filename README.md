@@ -85,7 +85,7 @@ The game will start and you can begin playing.
 
 ## Author
 
-Your Name  
+Aashika Pandey  
 B.Tech CSE (2025–29)  
 ITM Skills University
 
